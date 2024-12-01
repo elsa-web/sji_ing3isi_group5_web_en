@@ -1,41 +1,147 @@
-.welcome{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style:italic;
+/* Initializing the fonts */
+@font-face {
+    font-family: 'ProtestRevolution-Regular';
+    src: url(../fonts/ProtestRevolution-Regular.ttf);
 }
 
-.container{
+@font-face {
+    font-family: "GaMaamli-Regular";
+    src: url(../fonts/Ga_Maamli/GaMaamli-Regular.ttf);
+}
+
+/* Customizing the header */
+header{
+text-align: center;
+color: black;
+height: 2em;
+width: 100%;
+box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5) !important;
+padding: 3%;
+font-family: "GaMaamli-Regular", sans-serif;
+font-size: 7rem;
+color:#8b4bf1;
+
+
+}
+
+/* Customizing the body */
+ body{
 width: 100%;
 min-height: 200vh;
-background-color: #b793f0;
+background-color: white;
 background-size: cover;
-opacity: 50%;
+background-image:url(../images2/download\ \(2\).jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
 
+/* Reducing the opacity of the background image without reducing that of the content of the page */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 205%;
+    height: 205%;
+    background: rgba(247, 242, 242, 0.623); /* Black with 50% opacity */
+    z-index: -1;
 
 }
 
+/* Customizing nav bar */
 nav{
 display: flex;
 justify-content: space-around;
 align-items: center;
-gap: 1rem;
-padding: 5%;
+gap: 1.0rem;
+padding: 1%;
 font-family: 'Montserrat', sans-serif;
-font-size: 1.2rem;
+font-size: 1rem;
 font-style: italic;
+font-weight: 800;
+padding-bottom: 30px;
 
 
 
 }
 
+/* Customizing each item of the nav bar */
 nav a{
 color: black;
 transition:all 0.2s ease;
 text-decoration: none;
+align-items: center;
+font-style:italic;
+}
+
+/* Customizing each item of the nav bar on hover */
+a:hover{
+font-size: 1.2rem;
+color: pink(172, 57, 57);
+background-color: rgba(255, 255, 255, 0.1);
+transition-duration:0.3s;
+text-shadow:0 0 6px #b793f0;
+}
+
+/* Making each group of three cards to display horizontally */
+.row{
+display: flex;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
+/* Customizing body of search bar */
+.form-control{
+width: 30px;
+}
+
+.btn btn-primary d-inline-flex align-items-center{
+font-weight: 600;
+}
+
+/* Customizing body of search bar on hover */
+.search:hover{
+box-shadow:0px 0px 3px 3px  #bfa4eb;
+}
+
+.col{
+height: 30rem !important;
+}
+
+/* Customizing card body */
+.shadow-lg:hover{
+    box-shadow:0px 0px 15px 15px #b793f0 !important;
+    width: 28rem;
+    transition:all 0.2s ease;
+    height: 31rem !important;
+    transition-duration: 0.1s;
 
 }
 
-a:hover{
-font-size: 1.5rem;
-transition-duration:0.2s;
-text-shadow:0 0 2px blue;
+/* Customizing card buttons on hover */
+.btn:hover{
+height: 3rem;
+box-shadow:0px, 0px, 3px, 3px #ca4540 !important;
+color: black !important;
+}
+
+.message{
+text-align: center;
+margin-top: 2rem;
+font-family:"GaMaamli-Regular", sans-serif;
+font-size: 3lvw;
+font-weight: 200;
+padding-top: 2%;
+
+}
+
+.choice{
+    text-align: center;
+    margin-top: 2rem;
+    font-family:"GaMaamli-Regular", sans-serif;
+    font-size: 3lvw;
+    font-weight: 200;
+
+
 }

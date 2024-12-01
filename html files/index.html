@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,639;1,639&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css files/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css files/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css files/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap-grid.min.css">
+</head>
+
+
+<div class="back">
+<body>
+  <header>
+<p>Welcome to ISI QUIZ</p>
+    </header>
+
+    <!-- Creating the navbar of the page -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ScoreHistory</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Username
+          </a>
+<!-- This is for the drop down menu -->
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- Creating the search bar -->
+      <form class="d-flex" role="search">
+        <input class="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 5px;">
+        <button class="" class="btn btn-outline-success" type="submit" style="background-color: #9e6eeb; color: azure;">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="message">
+  <p>So you want to test your knowledge, huh?</p>
+</div>
+
+<div class="choice">
+  <p>Choose your category</p>
+</div>
+
+<!-- Creating a row class such that each group of three cards will diplay horizontally and customize the behaviour of each group of three cards -->
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+<!-- Creating a div with a col class such that we can be able to customize the attitude of each class -->
+  <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/geography2.jpg'); background-position-x: 30%; background-position-y: 15%; background-size: cover; height:60rem ">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Geography</h3>
+      </div>
+    </div>
+    <!-- Creating a button class for the buttons below each card -->
+    <div class="btn">
+      <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+        Let's Play!
+        <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+      </button>
+
+
+  </div>
+</div>
+
+
+<div class="col">
+  <div  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/40\ Best\ African\ Hair\ Braiding\ Styles\ for\ Women\ with\ Images.jpg'); background-position-x: 30%; background-position-y: 15%; background-size: cover; ">
+    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+      <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">History</h3>
+    </div>
+  </div>
+  <div class="btn">
+    <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+      Let's Play!
+      <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+    </button>
+
+
+</div>
+  </div>
+
+  <div class="col">
+    <div  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/AfricanDrummer.jpg'); background-position-x: 30%; background-position-y: 15%; background-size: cover; ">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Music</h3>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+        Let's Play!
+        <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+      </button>
+
+
+  </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+  <div class="col">
+    <div  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/foot.jpg'); background-position-x: 30%; background-position-y: 15%; background-size: cover; height:100rem ">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Football</h3>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+        Let's Play!
+        <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+      </button>
+
+
+  </div>
+    </div>
+    <div class="col">
+      <div  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/Mechanical\ Brain\ on\ the\ Table_\ Generative\ AI\ Stock\ Illustration\ -\ Illustration\ of\ processing\,\ brain_\ 269800701.jpg'); background-position-x: 30%; background-position-y: 15%; background-size: cover; ">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Computer Science</h3>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+          Let's Play!
+          <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+        </button>
+
+
+    </div>
+      </div>
+  <div class="col">
+    <div  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images2/Forex\ Chart\ on\ Yacht.jpg'); background-position-x: 30%; background-position-y: 40%; background-size: cover; ">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Economics</h3>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color:  #9e6eeb; font-family: 'Montserrat', sans-serif; border: none;">
+        Let's Play!
+        <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+      </button>
+
+
+  </div>
+</div>
+
+</body>
+</div>
+
+
+</html>
