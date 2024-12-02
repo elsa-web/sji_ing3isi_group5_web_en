@@ -34,6 +34,7 @@ background-image:url(../images2/download\ \(2\).jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+transition: all 0.5s ease;
 }
 
 /* Reducing the opacity of the background image without reducing that of the content of the page */
@@ -61,7 +62,7 @@ font-size: 1rem;
 font-style: italic;
 font-weight: 800;
 padding-bottom: 30px;
-
+transition: all 0.5s ease;
 
 
 }
@@ -73,6 +74,7 @@ transition:all 0.2s ease;
 text-decoration: none;
 align-items: center;
 font-style:italic;
+transition: all 0.5s ease;
 }
 
 /* Customizing each item of the nav bar on hover */
@@ -82,6 +84,7 @@ color: pink(172, 57, 57);
 background-color: rgba(255, 255, 255, 0.1);
 transition-duration:0.3s;
 text-shadow:0 0 6px #b793f0;
+transition: all 0.2s ease;
 }
 
 /* Making each group of three cards to display horizontally */
@@ -103,6 +106,7 @@ font-weight: 600;
 /* Customizing body of search bar on hover */
 .search:hover{
 box-shadow:0px 0px 3px 3px  #bfa4eb;
+transition: all 0.5s ease;
 }
 
 .col{
@@ -110,20 +114,27 @@ height: 30rem !important;
 }
 
 /* Customizing card body */
+.shadow-lg{
+    transition: all 0.5s ease;
+}
 .shadow-lg:hover{
     box-shadow:0px 0px 15px 15px #b793f0 !important;
     width: 28rem;
-    transition:all 0.2s ease;
+    transition:all 0.5s ease;
     height: 31rem !important;
-    transition-duration: 0.1s;
+    /* transition-duration: 0.1s; */
 
 }
 
+.btn{
+    transition: all 0.5s ease;
+}
 /* Customizing card buttons on hover */
 .btn:hover{
 height: 3rem;
 box-shadow:0px, 0px, 3px, 3px #ca4540 !important;
 color: black !important;
+transition: all 0.5s ease;
 }
 
 .message{
