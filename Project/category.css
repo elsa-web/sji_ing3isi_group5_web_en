@@ -36,8 +36,10 @@ header a:hover{
     color: black;
     background-color: #eee;
 }
-header .logo{
-    font-weight: bolder;
+header .logo img{
+    width: 100px;
+    padding-left: 20px;
+    padding-top: 50px;
 }
 header .menu{
     padding:0 ;
@@ -51,7 +53,7 @@ header .menu{
 /*********SLIDER***********/
 .slider{
     height: 100vh;/*?????????????????????WHY IT DOESNOT FUNCTION WITH %*/
-    margin-top: -50px;/*ENABLES THE SLIDER TO EXTEND TO HEADER 
+    margin-top: -50px;/*ENABLES THE SLIDER TO EXTEND TO HEADER
     I DID NOT USE top BECAUSE IT MAKES THE SLIDER TO BE*/
     position: relative;
 }
