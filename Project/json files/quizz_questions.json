@@ -1,0 +1,210 @@
+[
+    {
+      "question": "Which country won the first FIFA World Cup in 1930?",
+      "A": "Uruguay",
+      "B": "Brazil",
+      "C": "Argentina",
+      "D": "Italy",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which player has won the most Ballon d'Or awards?",
+      "A": "Cristiano Ronaldo",
+      "B": "Lionel Messi",
+      "C": "Zinedine Zidane",
+      "D": "Michel Platini",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the maximum number of players a football team can have on the pitch?",
+      "A": "10",
+      "B": "12",
+      "C": "11",
+      "D": "13",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which country has won the most FIFA World Cups?",
+      "A": "Germany",
+      "B": "Italy",
+      "C": "Argentina",
+      "D": "Brazil",
+      "correctAnswer": "D"
+    },
+    {
+      "question": "In which year was the Premier League founded?",
+      "A": "1992",
+      "B": "1989",
+      "C": "1995",
+      "D": "1990",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Who scored the \"Hand of God\" goal in the 1986 World Cup?",
+      "A": "Pelé",
+      "B": "Diego Maradona",
+      "C": "Johan Cruyff",
+      "D": "Zico",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which English club is known as 'The Red Devils'?",
+      "A": "Liverpool",
+      "B": "Chelsea",
+      "C": "Manchester United",
+      "D": "Arsenal",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the name of the official match ball used in FIFA World Cup 2018?",
+      "A": "Telstar 18",
+      "B": "Brazuca",
+      "C": "Jabulani",
+      "D": "Adidas Fevernova",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which club has won the most UEFA Champions League titles?",
+      "A": "Barcelona",
+      "B": "Real Madrid",
+      "C": "Bayern Munich",
+      "D": "AC Milan",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which country hosted the 2010 FIFA World Cup?",
+      "A": "Brazil",
+      "B": "South Africa",
+      "C": "Germany",
+      "D": "Russia",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Who holds the record for the fastest goal in a World Cup match?",
+      "A": "Hakan Şükür",
+      "B": "Ronaldo",
+      "C": "Pelé",
+      "D": "Miroslav Klose",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which football position is primarily responsible for scoring goals?",
+      "A": "Goalkeeper",
+      "B": "Defender",
+      "C": "Midfielder",
+      "D": "Forward",
+      "correctAnswer": "D"
+    },
+    {
+      "question": "What is the standard length of a football match?",
+      "A": "90 minutes",
+      "B": "80 minutes",
+      "C": "100 minutes",
+      "D": "120 minutes",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which country won the UEFA Euro 2020 tournament?",
+      "A": "England",
+      "B": "Italy",
+      "C": "France",
+      "D": "Spain",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Who is the all-time top scorer in the UEFA Champions League?",
+      "A": "Cristiano Ronaldo",
+      "B": "Lionel Messi",
+      "C": "Robert Lewandowski",
+      "D": "Raúl",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "What is the nickname of the Brazilian national football team?",
+      "A": "The Blues",
+      "B": "The Samba Boys",
+      "C": "The Selecao",
+      "D": "The Yellow Submarine",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which team won the treble in the 1998-99 season?",
+      "A": "Manchester United",
+      "B": "Real Madrid",
+      "C": "AC Milan",
+      "D": "Bayern Munich",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which country won the FIFA Women's World Cup in 2019?",
+      "A": "USA",
+      "B": "Germany",
+      "C": "Netherlands",
+      "D": "Sweden",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Who is often referred to as 'The King of Football'?",
+      "A": "Diego Maradona",
+      "B": "Pelé",
+      "C": "Zinedine Zidane",
+      "D": "Johan Cruyff",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the width of a standard football goal?",
+      "A": "8 yards",
+      "B": "10 yards",
+      "C": "6 yards",
+      "D": "7 yards",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which country is known as the inventor of modern football?",
+      "A": "Brazil",
+      "B": "Germany",
+      "C": "England",
+      "D": "Italy",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Who won the Golden Boot in the 2018 FIFA World Cup?",
+      "A": "Kylian Mbappé",
+      "B": "Harry Kane",
+      "C": "Luka Modrić",
+      "D": "Antoine Griezmann",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which football club is known as 'The Old Lady'?",
+      "A": "AC Milan",
+      "B": "Juventus",
+      "C": "Inter Milan",
+      "D": "Napoli",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the minimum number of players a football team can have on the pitch to continue a game?",
+      "A": "8",
+      "B": "7",
+      "C": "6",
+      "D": "9",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Who scored the winning goal for Germany in the 2014 FIFA World Cup final?",
+      "A": "Miroslav Klose",
+      "B": "Thomas Müller",
+      "C": "Mario Götze",
+      "D": "Toni Kroos",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which stadium is nicknamed 'The Theatre of Dreams'?",
+      "A": "Camp Nou",
+      "B": "Old Trafford",
+      "C": "Wembley Stadium",
+      "D": "San Siro",
+      "correctAnswer": "B"
+    }
+  ]

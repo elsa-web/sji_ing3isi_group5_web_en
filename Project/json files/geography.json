@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What is the longest river in the world?",
+      "A": "Amazon River",
+      "B": "Yangtze River",
+      "C": "Nile River",
+      "D": "Mississippi River",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which continent has the largest land area?",
+      "A": "Africa",
+      "B": "Asia",
+      "C": "North America",
+      "D": "Europe",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "A": "Sydney",
+      "B": "Melbourne",
+      "C": "Canberra",
+      "D": "Brisbane",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which country has the highest population?",
+      "A": "India",
+      "B": "United States",
+      "C": "China",
+      "D": "Indonesia",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the largest desert in the world?",
+      "A": "Sahara Desert",
+      "B": "Antarctic Desert",
+      "C": "Gobi Desert",
+      "D": "Arctic Desert",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which ocean is the deepest?",
+      "A": "Atlantic Ocean",
+      "B": "Pacific Ocean",
+      "C": "Indian Ocean",
+      "D": "Arctic Ocean",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Mount Everest is part of which mountain range?",
+      "A": "Andes",
+      "B": "Alps",
+      "C": "Himalayas",
+      "D": "Rocky Mountains",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the smallest country in the world by land area?",
+      "A": "Monaco",
+      "B": "San Marino",
+      "C": "Vatican City",
+      "D": "Liechtenstein",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which U.S. state is known as the 'Sunshine State'?",
+      "A": "California",
+      "B": "Florida",
+      "C": "Arizona",
+      "D": "Nevada",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which river flows through Paris?",
+      "A": "Danube",
+      "B": "Rhine",
+      "C": "Seine",
+      "D": "Thames",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the largest island in the world?",
+      "A": "Greenland",
+      "B": "New Guinea",
+      "C": "Borneo",
+      "D": "Madagascar",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "A": "Kyoto",
+      "B": "Tokyo",
+      "C": "Osaka",
+      "D": "Hiroshima",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the term for a narrow strip of land connecting two larger land areas?",
+      "A": "Peninsula",
+      "B": "Isthmus",
+      "C": "Archipelago",
+      "D": "Delta",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which country is home to the Great Barrier Reef?",
+      "A": "South Africa",
+      "B": "Indonesia",
+      "C": "Australia",
+      "D": "Brazil",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which African country is completely surrounded by South Africa?",
+      "A": "Swaziland",
+      "B": "Lesotho",
+      "C": "Botswana",
+      "D": "Namibia",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the largest freshwater lake by surface area?",
+      "A": "Lake Victoria",
+      "B": "Lake Superior",
+      "C": "Lake Baikal",
+      "D": "Lake Tanganyika",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which country is known as the 'Land of the Rising Sun'?",
+      "A": "China",
+      "B": "Japan",
+      "C": "South Korea",
+      "D": "Thailand",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which U.S. state is the largest by area?",
+      "A": "Texas",
+      "B": "California",
+      "C": "Alaska",
+      "D": "Montana",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the name of the sea located between Europe and Africa?",
+      "A": "Mediterranean Sea",
+      "B": "Black Sea",
+      "C": "Red Sea",
+      "D": "Arabian Sea",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Which of these countries is landlocked?",
+      "A": "India",
+      "B": "Nepal",
+      "C": "Vietnam",
+      "D": "Italy",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Which line of latitude is also known as the equator?",
+      "A": "0 degrees",
+      "B": "23.5 degrees North",
+      "C": "23.5 degrees South",
+      "D": "90 degrees",
+      "correctAnswer": "A"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "A": "Toronto",
+      "B": "Vancouver",
+      "C": "Ottawa",
+      "D": "Montreal",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Which country has the most volcanoes in the world?",
+      "A": "Japan",
+      "B": "Indonesia",
+      "C": "United States",
+      "D": "Italy",
+      "correctAnswer": "B"
+    },
+    {
+      "question": "What is the tallest waterfall in the world?",
+      "A": "Niagara Falls",
+      "B": "Victoria Falls",
+      "C": "Angel Falls",
+      "D": "Iguazu Falls",
+      "correctAnswer": "C"
+    },
+    {
+      "question": "What is the largest rainforest in the world?",
+      "A": "Congo Rainforest",
+      "B": "Amazon Rainforest",
+      "C": "Sundarbans",
+      "D": "Daintree Rainforest",
+      "correctAnswer": "B"
+    }
+  ]
