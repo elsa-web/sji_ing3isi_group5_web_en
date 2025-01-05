@@ -1,0 +1,204 @@
+{
+  "questions": [
+      {
+          "question": "When did Cameroon gain independence from France?",
+          "choice1": "1958",
+          "choice2": "1960",
+          "choice3": "1961",
+          "choice4": "1963",
+          "answer": 2
+      },
+      {
+          "question": "Who was the first President of Cameroon?",
+          "choice1": "Ahmadou Ahidjo",
+          "choice2": "Paul Biya",
+          "choice3": "Samuel Eto'o",
+          "choice4": "Jean-Bedel Bokassa",
+          "answer": 1
+      },
+      {
+          "question": "What is the official language of Cameroon?",
+          "choice1": "French and English",
+          "choice2": "French",
+          "choice3": "English",
+          "choice4": "Portuguese",
+          "answer": 1
+      },
+      {
+          "question": "Which mountain is the highest in Cameroon?",
+          "choice1": "Mount Fako",
+          "choice2": "Mount Everest",
+          "choice3": "Mount Kilimanjaro",
+          "choice4": "Mount Cameroon",
+          "answer": 4
+      },
+      {
+          "question": "What is the capital of Cameroon?",
+          "choice1": "Douala",
+          "choice2": "Bamenda",
+          "choice3": "Yaoundé",
+          "choice4": "Bafoussam",
+          "answer": 3
+      },
+      {
+          "question": "Which river is the longest in Cameroon?",
+          "choice1": "Sanaga River",
+          "choice2": "Benue River",
+          "choice3": "Nyong River",
+          "choice4": "Logone River",
+          "answer": 1
+      },
+      {
+          "question": "When did Cameroon join the United Nations?",
+          "choice1": "1945",
+          "choice2": "1960",
+          "choice3": "1961",
+          "choice4": "1972",
+          "answer": 3
+      },
+      {
+          "question": "What is the currency of Cameroon?",
+          "choice1": "CFA Franc",
+          "choice2": "Naira",
+          "choice3": "Pound",
+          "choice4": "Dollar",
+          "answer": 1
+      },
+      {
+          "question": "Which region is known as the economic capital of Cameroon?",
+          "choice1": "Yaoundé",
+          "choice2": "Douala",
+          "choice3": "Garoua",
+          "choice4": "Buea",
+          "answer": 2
+      },
+      {
+          "question": "What year did Cameroon first participate in the FIFA World Cup?",
+          "choice1": "1982",
+          "choice2": "1990",
+          "choice3": "1994",
+          "choice4": "2002",
+          "answer": 1
+      },
+      {
+          "question": "Which famous footballer is known as a legend from Cameroon?",
+          "choice1": "Samuel Eto'o",
+          "choice2": "Didier Drogba",
+          "choice3": "George Weah",
+          "choice4": "Jay-Jay Okocha",
+          "answer": 1
+      },
+      {
+          "question": "Which wildlife reserve in Cameroon is a UNESCO World Heritage site?",
+          "choice1": "Waza National Park",
+          "choice2": "Korup National Park",
+          "choice3": "Dja Faunal Reserve",
+          "choice4": "Benue National Park",
+          "answer": 3
+      },
+      {
+          "question": "What is the traditional Cameroonian dish made from maize and cassava?",
+          "choice1": "Fufu",
+          "choice2": "Ndolé",
+          "choice3": "Ekwang",
+          "choice4": "Achu",
+          "answer": 1
+      },
+      {
+          "question": "Which ethnic group is the largest in Cameroon?",
+          "choice1": "Bamileke",
+          "choice2": "Fang",
+          "choice3": "Beti-Pahuin",
+          "choice4": "Fulani",
+          "answer": 1
+      },
+      {
+          "question": "Which Cameroonian city is nicknamed the \"Town of Seven Hills\"?",
+          "choice1": "Douala",
+          "choice2": "Bamenda",
+          "choice3": "Yaoundé",
+          "choice4": "Bafoussam",
+          "answer": 3
+      },
+      {
+          "question": "When did Cameroon become a unitary state?",
+          "choice1": "1960",
+          "choice2": "1972",
+          "choice3": "1982",
+          "choice4": "1990",
+          "answer": 2
+      },
+      {
+          "question": "What is the name of Cameroon's national football team?",
+          "choice1": "Indomitable Lions",
+          "choice2": "Super Eagles",
+          "choice3": "Black Stars",
+          "choice4": "Leopards",
+          "answer": 1
+      },
+      {
+          "question": "Which Cameroonian port is one of the busiest in Central Africa?",
+          "choice1": "Kribi",
+          "choice2": "Douala",
+          "choice3": "Limbe",
+          "choice4": "Garoua",
+          "answer": 2
+      },
+      {
+          "question": "Which Cameroonian leader succeeded Ahmadou Ahidjo?",
+          "choice1": "Paul Biya",
+          "choice2": "Samuel Eto'o",
+          "choice3": "Félix Houphouët-Boigny",
+          "choice4": "Nnamdi Azikiwe",
+          "answer": 1
+      },
+      {
+          "question": "Which Cameroonian traditional dance is popular among the Bamileke people?",
+          "choice1": "Makossa",
+          "choice2": "Bikutsi",
+          "choice3": "Assiko",
+          "choice4": "La'kpe",
+          "answer": 4
+      },
+      {
+          "question": "Which body of water borders Cameroon to the west?",
+          "choice1": "Atlantic Ocean",
+          "choice2": "Indian Ocean",
+          "choice3": "Lake Chad",
+          "choice4": "Gulf of Guinea",
+          "answer": 4
+      },
+      {
+          "question": "When did Cameroon reunify as a bilingual nation?",
+          "choice1": "1961",
+          "choice2": "1965",
+          "choice3": "1970",
+          "choice4": "1975",
+          "answer": 1
+      },
+      {
+          "question": "Which Cameroonian is a Nobel Peace Prize laureate?",
+          "choice1": "Albert Schweitzer",
+          "choice2": "Rigobert Song",
+          "choice3": "Francis Nkwain",
+          "choice4": "None",
+          "answer": 4
+      },
+      {
+          "question": "What year was the African Cup of Nations first held in Cameroon?",
+          "choice1": "1972",
+          "choice2": "1988",
+          "choice3": "2000",
+          "choice4": "2021",
+          "answer": 1
+      },
+      {
+          "question": "Which Cameroonian city is known for its volcanic activity?",
+          "choice1": "Douala",
+          "choice2": "Buea",
+          "choice3": "Bamenda",
+          "choice4": "Kribi",
+          "answer": 2
+      }
+  ]
+}
