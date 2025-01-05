@@ -122,6 +122,7 @@ const restartBtn = document.getElementById('restart-btn');
 const saveScoreBtn = document.getElementById('save-score-btn');
 const totalScoreElem = document.getElementById('total-score');
 const userList = document.getElementById("userList");
+const progress_bar = document.getElementById("bar");
 console.log(question);
 
 
@@ -210,6 +211,8 @@ function loadQuestion() {
         //TO ACCESS THE DIFFERENT CHOICES BIC THEY CONTAIN DYNAMIC ELEMENTS (1,2,...) IN choice1,...
     });
     questionCounterElem.textContent = counter + 1;
+    progress_bar.style.width=((counter+1)/questions.length)*100+"%";
+    console.log(progress_bar.style.width);
     scoreElem.textContent = score;
 
     choicesElem.forEach(choice => {
@@ -309,7 +312,7 @@ initializeQuiz();
 // Function to save user data to Local Storage
 function saveUserData(userdata) {
     // Retrieve the existing users array or initialize a new one
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let users = JSON.parse(localStorage.getItem(category)) || [];
 
     // Add the new userdata object to the array
     users.push(userdata);
@@ -320,7 +323,7 @@ function saveUserData(userdata) {
 
     console.log(userdata);
     // Save the updated array back to Local Storage
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem(category, JSON.stringify(users));
   }
 
 /**innerText: When you care about visible text only (text that’s actually rendered on the screen).
@@ -331,7 +334,7 @@ value: When dealing with form elements like <input> or <textarea> to get or set 
 function displayUserData() {
     // Retrieve the stored users array
     //JSON.parse converts the retrieved string into a JS object
-    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const users = JSON.parse(localStorage.getItem(category)) || [];
 
     // Clear the current list
     userList.innerHTML = "";
@@ -373,13 +376,13 @@ displayUserData();
 
 function deleteUserData(index) {
     // Retrieve the current users array from localStorage
-    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const users = JSON.parse(localStorage.getItem(category)) || [];
 
     // Remove the user at the specified index
     users.splice(index, 1);
 
     // Update localStorage with the modified users array
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem(category, JSON.stringify(users));
 
     // Refresh the displayed user data
     displayUserData();

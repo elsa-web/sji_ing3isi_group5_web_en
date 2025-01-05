@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplayer Quiz Game</title>
     <link rel="stylesheet" href="../css files/peerjs2.css" >
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" type="image/x-icon" href="../images/quizz.ico">
+    <link rel="stylesheet" href="../css files/quiz.css">
+    <link rel="stylesheet" href="../css files/bootstrap/css/bootstrap.css">
     <!--defer is to ensure that the html file is loaded before the scripts-->
 </head>
 <body>
@@ -27,6 +29,7 @@
 
         <!--QUIZ SCREEN-->
         <div id="quiz-screen" class="hidden">
+            <div id="quiz-box">
             <div id="question-container">
                 <h2 id="question"></h2>
                 <div id="choices">
@@ -38,7 +41,13 @@
             </div>
             <div id="quiz-footer">
                 <p>Question <span id="question-counter">1</span>/<span id="total-questions"></span></p>
+                <div class="progress">
+                    <div class="progress-bar" id="bar" style="background:#97c513;">
+                        <div class="progress-value">65%</div>
+                    </div>
+                </div>
                 <p>Score: <span id="score">0</span></p>
+            </div>
             </div>
         </div>
 
@@ -60,5 +69,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/peerjs@1.4.7/dist/peerjs.min.js"></script>
     <script src="../js files/peerjs2.js" defer></script>
+    <script src="../js files/jquery-3.7.1.min.js"></script>
+    <script src="../js files/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
