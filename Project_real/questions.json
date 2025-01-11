@@ -1,0 +1,36 @@
+{
+    "questions": [
+        {
+            "question": "Who is the boyfriend of Emma?",
+            "choice1": "Ramses",
+            "choice2": "Marlet", 
+            "choice3": "Ivan",
+            "choice4": "Myron",
+            "answer": 1
+        },
+        {
+            "question": "What is 2 + 2?",
+            "choice1": "3",
+            "choice2": "4", 
+            "choice3": "5",
+            "choice4": "6",
+            "answer": 2
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "choice1": "Earth",
+            "choice2": "Mars", 
+            "choice3": "Venus",
+            "choice4": "Jupiter",
+            "answer": 2
+        },
+        {
+            "question": "Who wrote 'Hamlet'?",
+            "choice1": "Charles Dickens",
+            "choice2": "William Shakespeare", 
+            "choice3": "Leo Tolstoy",
+            "choice4": "Mark Twain",
+            "answer": 2
+        }
+    ]
+}
