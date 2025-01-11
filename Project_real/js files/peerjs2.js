@@ -165,7 +165,7 @@ async function loadQuestions() {
 
         // Optional: Add visual indication that questions are ready
         startBtn.disabled = false;
-        startBtn.textContent = 'YO NIGGA';//For the user to know he can start
+        startBtn.textContent = 'Start Game';//For the user to know he can start
     }
     catch (error) {//to handle any errors that might have occured on the execution of the try block
         // Comprehensive error handling
