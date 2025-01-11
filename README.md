@@ -1,9 +1,9 @@
 GROUP MEMBERS:
-  KANA MBAKOP LEONCE ELSA-
-  KOUETCHE SIMO YANN JEFFERSON-
-  WANKO TAGNE RAMSES JUNIOR-
+ -KANA MBAKOP LEONCE ELSA
+ -KOUETCHE SIMO YANN JEFFERSON
+ -WANKO TAGNE RAMSES JUNIOR 
 
-  PROJECT DESCRIPTION
+  PROJECT DESCRIPTION:
   A fun project, this one focuses on a quiz that consists of a set of question-answer pairs.
 The questions and answers will be stored in a JSON file and grouped by categories. We will 
 have the following categories: Football, Culture, Music, Economics, Geography, and Computer 

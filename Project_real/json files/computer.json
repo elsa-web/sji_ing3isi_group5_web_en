@@ -1,0 +1,212 @@
+{
+  "questions": [
+      {
+          "question": "What does CPU stand for?",
+          "choice1": "Central Processing Unit",
+          "choice2": "Computer Personal Unit",
+          "choice3": "Central Programming Utility",
+          "choice4": "Central Power Unit",
+          "answer": 1
+      },
+      {
+          "question": "Which of these is a programming language?",
+          "choice1": "HTML",
+          "choice2": "Python",
+          "choice3": "HTTP",
+          "choice4": "CSS",
+          "answer": 2
+      },
+      {
+          "question": "What is the main function of an operating system?",
+          "choice1": "Manage computer hardware and software resources",
+          "choice2": "Store data permanently",
+          "choice3": "Run antivirus programs",
+          "choice4": "Connect computers to the internet",
+          "answer": 1
+      },
+      {
+          "question": "Which of these is an example of a relational database?",
+          "choice1": "MySQL",
+          "choice2": "Python",
+          "choice3": "JSON",
+          "choice4": "HTML",
+          "answer": 1
+      },
+      {
+          "question": "What does 'HTTP' stand for?",
+          "choice1": "HyperText Transfer Protocol",
+          "choice2": "Hyperlink Text Transfer Protocol",
+          "choice3": "High Transfer Text Protocol",
+          "choice4": "HyperText Transmission Process",
+          "answer": 1
+      },
+      {
+          "question": "What is the purpose of a compiler?",
+          "choice1": "Convert high-level code into machine code",
+          "choice2": "Execute programs line by line",
+          "choice3": "Debug code in real-time",
+          "choice4": "Translate code into pseudocode",
+          "answer": 1
+      },
+      {
+          "question": "Which data structure uses LIFO (Last In, First Out)?",
+          "choice1": "Queue",
+          "choice2": "Stack",
+          "choice3": "Array",
+          "choice4": "Heap",
+          "answer": 2
+      },
+      {
+          "question": "What does RAM stand for?",
+          "choice1": "Random Access Memory",
+          "choice2": "Read And Modify",
+          "choice3": "Random Allocation Module",
+          "choice4": "Read Access Memory",
+          "answer": 1
+      },
+      {
+          "question": "What is the time complexity of binary search on a sorted array?",
+          "choice1": "O(n)",
+          "choice2": "O(n^2)",
+          "choice3": "O(log n)",
+          "choice4": "O(1)",
+          "answer": 3
+      },
+      {
+          "question": "Which protocol is used to send emails?",
+          "choice1": "HTTP",
+          "choice2": "FTP",
+          "choice3": "SMTP",
+          "choice4": "DNS",
+          "answer": 3
+      },
+      {
+          "question": "What is the purpose of an IP address?",
+          "choice1": "Identify a device on a network",
+          "choice2": "Encrypt data during transmission",
+          "choice3": "Store user credentials",
+          "choice4": "Control internet speed",
+          "answer": 1
+      },
+      {
+          "question": "Which sorting algorithm has the worst-case time complexity of O(n^2)?",
+          "choice1": "Merge Sort",
+          "choice2": "Quick Sort",
+          "choice3": "Bubble Sort",
+          "choice4": "Heap Sort",
+          "answer": 3
+      },
+      {
+          "question": "What is a primary key in a database?",
+          "choice1": "A unique identifier for a record",
+          "choice2": "A field that stores passwords",
+          "choice3": "A field that allows duplicate values",
+          "choice4": "A field that contains foreign references",
+          "answer": 1
+      },
+      {
+          "question": "Which of these is a NoSQL database?",
+          "choice1": "PostgreSQL",
+          "choice2": "MongoDB",
+          "choice3": "Oracle DB",
+          "choice4": "SQLite",
+          "answer": 2
+      },
+      {
+          "question": "What does 'OOP' stand for in programming?",
+          "choice1": "Object-Oriented Programming",
+          "choice2": "Operational Output Processing",
+          "choice3": "Optimized Operating Protocol",
+          "choice4": "Object-Optimized Procedure",
+          "answer": 1
+      },
+      {
+          "question": "What is the role of DNS in networking?",
+          "choice1": "Convert domain names to IP addresses",
+          "choice2": "Secure data during transmission",
+          "choice3": "Allocate bandwidth for applications",
+          "choice4": "Connect devices to the internet",
+          "answer": 1
+      },
+      {
+          "question": "Which of these is an example of a compiled language?",
+          "choice1": "Java",
+          "choice2": "Python",
+          "choice3": "JavaScript",
+          "choice4": "HTML",
+          "answer": 1
+      },
+      {
+          "question": "What is the purpose of a foreign key in a database?",
+          "choice1": "Ensure data integrity between tables",
+          "choice2": "Encrypt database entries",
+          "choice3": "Store unique data in a table",
+          "choice4": "Optimize database queries",
+          "answer": 1
+      },
+      {
+          "question": "What is the output of 2 + 3 * 4 in most programming languages?",
+          "choice1": "14",
+          "choice2": "20",
+          "choice3": "9",
+          "choice4": "24",
+          "answer": 1
+      },
+      {
+          "question": "Which layer of the OSI model is responsible for encryption?",
+          "choice1": "Application",
+          "choice2": "Transport",
+          "choice3": "Session",
+          "choice4": "Presentation",
+          "answer": 4
+      },
+      {
+          "question": "What does an algorithm's Big O notation describe?",
+          "choice1": "Its correctness",
+          "choice2": "Its performance in the worst case",
+          "choice3": "Its functionality",
+          "choice4": "Its coding style",
+          "answer": 2
+      },
+      {
+          "question": "What is the primary purpose of a firewall?",
+          "choice1": "Prevent unauthorized access to a network",
+          "choice2": "Store backup data",
+          "choice3": "Accelerate internet speeds",
+          "choice4": "Encrypt transmitted data",
+          "answer": 1
+      },
+      {
+          "question": "What is the function of a cache in computing?",
+          "choice1": "Store frequently accessed data for faster retrieval",
+          "choice2": "Delete unnecessary files",
+          "choice3": "Optimize internet speeds",
+          "choice4": "Store all user data permanently",
+          "answer": 1
+      },
+      {
+          "question": "What is the main characteristic of a linked list?",
+          "choice1": "Elements are stored in contiguous memory locations",
+          "choice2": "Each element points to the next one",
+          "choice3": "It allows direct access to elements",
+          "choice4": "It is always sorted",
+          "answer": 2
+      },
+      {
+          "question": "What is the primary difference between TCP and UDP?",
+          "choice1": "TCP is faster than UDP",
+          "choice2": "UDP is connection-oriented while TCP is not",
+          "choice3": "TCP ensures reliable delivery while UDP does not",
+          "choice4": "UDP uses encryption, but TCP does not",
+          "answer": 3
+      },
+      {
+          "question": "What is the primary use of the 'git' tool?",
+          "choice1": "Manage and track changes in source code",
+          "choice2": "Compile programming code",
+          "choice3": "Debug software programs",
+          "choice4": "Encrypt files",
+          "answer": 1
+      }
+  ]
+}
