@@ -47,6 +47,7 @@ document.getElementById('transitionLink2').addEventListener('click', () => {
     if (info.email==e_mail && info.password == password) {
         alert(`Welcome back, ${info.name}!`);
         console.log("Now it is supposed to change page");
+        localStorage.setItem("currentUser", info.email);
         // Redirect to dashboard or another page
         document.body.classList.add('slide-out'); // Trigger translateY effect
         console.log("azert")

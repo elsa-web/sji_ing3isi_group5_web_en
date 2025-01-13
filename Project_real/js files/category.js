@@ -80,5 +80,53 @@ document.getElementById("economy").addEventListener('click', function () {
     console.log(category);
 });
 
+//getting username and displaying
+const currentUsermail=localStorage.getItem("currentUser");
+console.log("mail:"+ currentUsermail)
+const currentUser=JSON.parse(localStorage.getItem(currentUsermail));
+console.log("user:"+ currentUser)
+const currentusername = currentUser.name;
+document.getElementById("usrname").textContent=currentusername;
+
+const overlay=document.getElementById("overlay");
+const showOverlayButton=document.getElementById("showOverlay");
+const tablesContainer =document.getElementById("tables-container");
+const cate=["geography", "computer", "music", "history", "economy", "football"];
+
+showOverlayButton.addEventListener('click', ()=> {
+    tablesContainer.textContent="";
+    for(let i=0; i<6; i++){
+        const tableData=JSON.parse(localStorage.getItem(cate[i]))
+        console.log(tableData)
+
+        if(tableData){
+            const table=document.createElement("table");
+
+            //creating header
+            const headerRow=document.createElement("tr")
+            const headerCell=document.createElement("th")
+            headerCell.textContent=cate[i]
+            headerRow.appendChild(headerCell)
+            table.appendChild(headerRow)
+
+            //creating rows
+            tableData.forEach(dataItem => {
+                const row=document.createElement("tr")
+                const cell=document.createElement("td")
+                cell.textContent=dataItem.currentusername+":"+dataItem.score
+                row.appendChild(cell)
+                table.appendChild(row)
+            })
+            tablesContainer.appendChild(table);
+        }
+    }
+
+    overlay.style.display='flex'
+})
+
+overlay.addEventListener('click', ()=> {
+    overlay.style.display='none'
+})
+
+
 console.log(category);
-// export {category};

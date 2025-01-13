@@ -123,6 +123,9 @@ const saveScoreBtn = document.getElementById('save-score-btn');
 const totalScoreElem = document.getElementById('total-score');
 const userList = document.getElementById("userList");
 const progress_bar = document.getElementById("bar");
+const countdown = document.getElementById("count-down");
+const highscore=document.getElementById("high-score-page");
+let startcount=45;
 console.log(question);
 
 
@@ -193,6 +196,17 @@ function startGame() {
     for (let i = 0; i < questions.length; i++) {
         availableQuestions.push(questions[i]);
     }
+     //adding count down
+     setInterval(() => {
+        countdown.textContent=startcount+"s";
+        startcount--;
+        if(startcount<0){
+            localStorage.setItem("mostRecentScore", score);
+            endGame();
+            console.log("startcount after fxn call: "+startcount)
+        }
+        console.log("startcount: "+startcount)
+    }, 1000);
 
     loadQuestion();
 }
@@ -276,7 +290,7 @@ function handleChoiceClick(event) {
             localStorage.setItem("mostRecentScore", score);
             endGame();
         }
-    }, 2000); // Delay of 1 second for feedback
+    }, 1000); // Delay of 1 second for feedback
 }
 
 
@@ -342,30 +356,32 @@ function displayUserData() {
     // Loop through the users and display each one
     users.forEach((user, index) => {
       const listItem = document.createElement("li");
-      listItem.textContent = `Name: ${user.name}, Score: ${user.score}`;
+      listItem.textContent = `Name: ${user.currentusername}, Score: ${user.score}`;
 
       // Add a delete button for each user
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
       deleteButton.addEventListener("click", () => deleteUserData(index));
 
-      //adds delete btn as child of the list item
-      listItem.appendChild(deleteButton);
       //Adds the listitem to the list
       userList.appendChild(listItem);
     });
 }
 
-saveScoreBtn.addEventListener('click', (e) => {
+saveScoreBtn&&highscore.addEventListener('click', (e) => {
 e.preventDefault(); // Prevent form submission from refreshing the page
 
-// Get values from the form inputs
-const name = document.getElementById("username").value;
+//getting username and assigning a score automatically
+const currentUsermail=localStorage.getItem("currentUser");
+console.log("mail:"+ currentUsermail)
+const currentUser=JSON.parse(localStorage.getItem(currentUsermail));
+console.log("user:"+ currentUser)
+const currentusername = currentUser.name;
 
-console.log(name);
+console.log(currentusername);
 console.log(score);
 // Create a userdata object
-const userdata = { name, score };
+const userdata = { currentusername, score };
 
 // Save the userdata object to Local Storage
 saveUserData(userdata);
