@@ -1,0 +1,261 @@
+*{
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    overflow: hidden;/*PREVENTS SCROLLBARS FROM APPEARING*/
+	align-items: center;
+	display: flex;/*BODY BECOMES A FLEX CONTAINER*/
+	align-items: center;/*CENTERS THE FLEX ITEMS VERTICALLY*/
+	justify-content:center;/*CENTERS THE FLEX ITEMS HORIZONTALLY*/
+	flex-direction: column;/*SPECIFIES DIRECTION OF FLEX ITEMS*/
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+	min-height: 100vh;/*SETS THE MINIMUM HEIGHT OF THE BODY TO BE 100% OF THE VIEWPORT HEIGHT*/
+	background-image: url('../pictures/bg.jpg');
+	background-size: cover; /* Ensures the image covers the entire container */
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.logo_quizz {
+    position: fixed; /* Ensures the logo stays at the top-left corner of the screen */
+    top: 10px; /* Adds space from the top of the screen */
+    left: 10px; /* Adds space from the left of the screen */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.logo_quizz img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the image fits nicely */
+}
+
+.container{
+	position: relative;/* WHEN WE SET THIS PROPERTY WITHOUT TOP LEFT BOTTOM OR RIGHT???????????????????????????????????
+	IT PERMITS THAT ITS CHILD ELEMTS WILL BE POSITIONED RELATIVE TO THIS CONTAINER WHEN USING position:absolute */
+	top: auto;
+	left: auto;
+	min-width: 60%;
+	min-height: 480px;
+	background: transparent;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(54, 0, 67, 0.25),
+				0 10px 10px rgba(54, 0, 67, 0.22)
+}
+
+.sign-up, .sign-in{
+	background: transparent;
+	backdrop-filter: blur(5px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+    width: 50%;
+	transition: all 0.6s ease-in-out;
+}
+.sign-up{
+	opacity: 0;/*MAKES SIGNUP ELEMENTS INVISIBLE*/
+	z-index: 1
+}
+.sign-in{
+	z-index: 2;
+}
+form{
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 15%;/*50px = 15%*/
+	height: 100%;
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+	margin: 5% 0 12% 0;
+}
+p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 5% 0 12% 0;
+}
+.input-group{
+	display: flex;/*Transforms the container into a flex container 
+	thereby enabling flex ppties*/
+	/*Flex PPTIES
+	flex-direction, flx-wrap:wrap (items wrap to the next line if needed)
+	justify-content, align-items*/
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	flex-direction: row;
+	padding: 4% 5%;
+	margin: 3% 5%;
+}
+input{
+	background: transparent;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	outline: none;/*Rmoves the default behaviour on an element
+	of the browser when an element is focused on*/
+}
+a{
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 5% 0;
+}
+button{
+	color: #fff;
+	background: #6a007a;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 5% 0 12% 0;
+	padding: 3.6% 16.5%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	letter-spacing: 1px;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #4d0058;
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+button:active{
+	transform: scale(1.08);/*ANIMATION THAT WILL OCCUR WHEN THE BUTTON IS CLICKED*/
+	transition: all 0.5s ease-in;
+}
+#signIn, #signUp{
+	background: transparent;
+	border: 2px solid #fff;
+	transition: all 0.5s ease-in;
+}
+#signIn:hover, #signUp:hover{
+	background: #4d0058;
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s ease-in;
+}
+#signIn:hover, #signUp:active{
+	transform: scale(1.08);/*ANIMATION THAT WILL OCCUR WHEN THE BUTTON IS CLICKED*/
+	transition: all 0.5s ease-in;
+}
+.overlay-left, .overlay-right{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 7%;/*10% of width element */
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+    background: #6a007a;
+	text-align: justify;
+}
+.overlay-left{
+    z-index: 1;
+}
+.overlay-right{
+    z-index: 2;
+}
+.container.right-panel-active .overlay-left{
+    /*ON CLICKING SIGNUP, BOT OVERLAYS MOVE TO LEFT AND THE LEFT BECOMES THE VISIBLE ONE*/
+    transform: translateX(-100%);
+	animation: show 0.6s ease-in-out forwards;
+}
+.container.right-panel-active .overlay-right{
+    transform: translateX(-100%);
+	opacity: 0;
+}
+.container.right-panel-active .sign-in{/*WHEN SIGNUP BUTTON OF OVERLAY IS CLICKED
+	THIS PROPERTY IS SET*/
+	transform: translateX(100%);
+	opacity: 0;
+}
+.container.right-panel-active .sign-up{/*WHEN SIGNUP BUTTON OF OVERLAY IS CLICKED
+	THIS PROPERTY IS SET*/
+	transform: translateX(100%);
+	animation: show 0.6s ease-in-out forwards;
+}
+@keyframes show{/*THIS KEYFRAME SHOW DESCRIBES HOW THE OBJECT SHOULD ANIMATE OVER TIME*/
+	0%, 49.99%{/*FROM START TO HALFWAY OF THE ANIMATION, THE FOLLOWING PROPERTIES ARE SET*/
+		opacity: 0;
+		z-index: 1;
+	}
+	50%, 100%{/*FROM HALFWAY TO END OF THE ANIMATION, THE FOLLOWING PROPERTIES ARE SET*/
+		opacity: 1;
+		z-index: 6;
+	}
+}
+/*POPUP PPTIES*/
+.popup {
+    position: fixed; /* Set fixed position to ensure it stays visible on screen */
+    top: 50%; /* Initially centered */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the popup */
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */
+    transition: all 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Popup becomes visible when the active-popup class is added to the body*/
+body.active-popup .popup {
+    opacity: 1; /* Make the popup visible */
+    visibility: visible; /* Ensure the popup is shown */
+    z-index: 100; /* Make sure it's on top */
+}
+
+/* Blur background when popup is visible */
+body.active-popup #main{
+    filter: blur(5px);
+}
+
+.popup button.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0;  /* Override the general button padding */
+    margin: 0;
+    background: linear-gradient(135deg, #6a007a, #a3009a);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.popup .close-btn:hover {
+	background: linear-gradient(135deg, #a3009a, #6a007a);
+	transform: scale(1.1);
+}

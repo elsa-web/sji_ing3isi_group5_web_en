@@ -1,0 +1,203 @@
+[
+    {
+        "question": "What is the traditional dish Ndolé made from?",
+        "choice1": "Plantains and fish",
+        "choice2": "Rice and beans",
+        "choice3": "Cassava leaves and groundnuts",
+        "choice4": "Corn and chicken",
+        "answer": 3
+    },
+    {
+        "question": "Which Cameroonian festival is celebrated by the Sawa people?",
+        "choice1": "Bafut Dance Festival",
+        "choice2": "Ngondo Festival",
+        "choice3": "Nyang Nyang Festival",
+        "choice4": "Mbouda Harvest Festival",
+        "answer": 2
+    },
+    {
+        "question": "What is the main theme of the Ngondo Festival?",
+        "choice1": "Harvest celebration",
+        "choice2": "River and water spirits",
+        "choice3": "Marriage ceremonies",
+        "choice4": "Ancestral worship",
+        "answer": 2
+    },
+    {
+        "question": "What is a traditional Cameroonian outfit for men called?",
+        "choice1": "Dashiki",
+        "choice2": "Toghu",
+        "choice3": "Boubou",
+        "choice4": "Agbada",
+        "answer": 2
+    },
+    {
+        "question": "Which region is known for the Bamileke traditional dances?",
+        "choice1": "Northern Region",
+        "choice2": "Western Region",
+        "choice3": "Southern Region",
+        "choice4": "Eastern Region",
+        "answer": 2
+    },
+    {
+        "question": "What is the significance of the Fon in Cameroonian culture?",
+        "choice1": "He is a musician.",
+        "choice2": "He is a traditional ruler.",
+        "choice3": "He is a trader.",
+        "choice4": "He is a warrior.",
+        "answer": 2
+    },
+    {
+        "question": "What is the traditional dance of the Beti people called?",
+        "choice1": "Bikutsi",
+        "choice2": "Makossa",
+        "choice3": "Assiko",
+        "choice4": "Ekang",
+        "answer": 1
+    },
+    {
+        "question": "What is the cultural importance of the Toghu attire?",
+        "choice1": "It symbolizes royalty and tradition.",
+        "choice2": "It is used in farming.",
+        "choice3": "It is worn during funerals only.",
+        "choice4": "It is exclusive to women.",
+        "answer": 1
+    },
+    {
+        "question": "What is the traditional Cameroonian way of settling disputes?",
+        "choice1": "By voting",
+        "choice2": "Through courts",
+        "choice3": "Through a council of elders",
+        "choice4": "By duels",
+        "answer": 3
+    },
+    {
+        "question": "Which traditional sport is popular in Northern Cameroon?",
+        "choice1": "Horse racing",
+        "choice2": "Wrestling",
+        "choice3": "Archery",
+        "choice4": "Spear throwing",
+        "answer": 2
+    },
+    {
+        "question": "What is the purpose of the grass fields' traditional ceremonies?",
+        "choice1": "To perform marriages",
+        "choice2": "To declare wars",
+        "choice3": "To honor ancestors and spirits",
+        "choice4": "To celebrate new births",
+        "answer": 3
+    },
+    {
+        "question": "What is the role of a traditional griot in Cameroon?",
+        "choice1": "Farmer",
+        "choice2": "Hunter",
+        "choice3": "Priest",
+        "choice4": "Storyteller and historian",
+        "answer": 4
+    },
+    {
+        "question": "What is a common drink made from fermented maize in Cameroon?",
+        "choice1": "Palm wine",
+        "choice2": "Corn beer",
+        "choice3": "Millet beer",
+        "choice4": "Raffia wine",
+        "answer": 2
+    },
+    {
+        "question": "Which animal is a symbol of strength in Cameroonian folklore?",
+        "choice1": "Leopard",
+        "choice2": "Elephant",
+        "choice3": "Eagle",
+        "choice4": "Lion",
+        "answer": 4
+    },
+    {
+        "question": "What type of art is Cameroon famous for?",
+        "choice1": "Painting",
+        "choice2": "Wood carvings",
+        "choice3": "Pottery",
+        "choice4": "Weaving",
+        "answer": 2
+    },
+    {
+        "question": "Which region is known for its colorful beadwork?",
+        "choice1": "South West",
+        "choice2": "North West",
+        "choice3": "Adamawa",
+        "choice4": "East",
+        "answer": 2
+    },
+    {
+        "question": "What is a common theme in Cameroonian proverbs?",
+        "choice1": "Love and romance",
+        "choice2": "Travel and exploration",
+        "choice3": "War and victory",
+        "choice4": "Community and unity",
+        "answer": 4
+    },
+    {
+        "question": "Which ethnic group is known for the Nguon Festival?",
+        "choice1": "Fang",
+        "choice2": "Fulani",
+        "choice3": "Beti",
+        "choice4": "Bamoun",
+        "answer": 4
+    },
+    {
+        "question": "What is a popular Cameroonian method of cooking?",
+        "choice1": "Boiling in large pots",
+        "choice2": "Steaming in banana leaves",
+        "choice3": "Grilling on open flames",
+        "choice4": "Baking in clay ovens",
+        "answer": 2
+    },
+    {
+        "question": "Which Cameroonian mask is used in fertility rituals?",
+        "choice1": "Bird mask",
+        "choice2": "Elephant mask",
+        "choice3": "Antelope mask",
+        "choice4": "Human face mask",
+        "answer": 2
+    },
+    {
+        "question": "What is the role of traditional healers in Cameroonian culture?",
+        "choice1": "Providing herbal medicine and spiritual guidance",
+        "choice2": "Leading military forces",
+        "choice3": "Performing marriages",
+        "choice4": "Teaching in schools",
+        "answer": 1
+    },
+    {
+        "question": "What is the main ingredient in Achu soup?",
+        "choice1": "Rice",
+        "choice2": "Yellow yam",
+        "choice3": "Corn",
+        "choice4": "Plantains",
+        "answer": 2
+    },
+    {
+        "question": "Which Cameroonian language is written using the Bamum script?",
+        "choice1": "Beti",
+        "choice2": "Fang",
+        "choice3": "Fulfulde",
+        "choice4": "Bamum",
+        "answer": 4
+    },
+    {
+        "question": "What is the significance of palm wine in Cameroonian culture?",
+        "choice1": "It is used in celebrations and rituals.",
+        "choice2": "It is reserved for chiefs.",
+        "choice3": "It is sold as medicine.",
+        "choice4": "It is consumed by warriors only.",
+        "answer": 1
+    },
+    {
+        "question": "Which material is commonly used in Cameroonian traditional architecture?",
+        "choice1": "Concrete",
+        "choice2": "Mud and thatch",
+        "choice3": "Brick",
+        "choice4": "Wood",
+        "answer": 2
+    }
+]
+
