@@ -12,6 +12,7 @@ body{
     }
 }
 header{
+    padding-top: 15px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -40,6 +41,7 @@ header button{
 header button:hover{
     color: black;
     background-color: white;
+    cursor: pointer;
 }
 header .logo img{
     width: 100px;
@@ -55,6 +57,7 @@ header .menu{
     gap: 20px;
     font-weight: 500;
 }
+
 /*********SLIDER***********/
 .slider{
     height: 100vh;/*?????????????????????WHY IT DOESNOT FUNCTION WITH %*/
@@ -201,7 +204,7 @@ header .menu{
     filter: brightness(.5);
 }
 
-video {
+.photo {
     position: absolute;
     top: 0;
     left: 0;
@@ -218,7 +221,7 @@ video {
         font-size: 60px;
     }
     .arrows{
-        top: 10%;
+        top: 40%;
     }
 }
 

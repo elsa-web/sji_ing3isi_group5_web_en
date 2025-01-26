@@ -48,3 +48,8 @@ button:hover {
     margin: 10px 0;
     padding: 5px;
 }
+#start-screen{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -23,8 +23,15 @@
     <div id="game-container" class="hidden">
         <div id="start-screen" >
             <h1>Quiz Game</h1>
+            <p>Your opponent is: <span id="opponent_name"></span></p>
+            <p>The rules are as follows: </p>
+            <ol>
+                <li>You are given an amount of time to answer all the questions</li>
+                <li>The game ends either when the time finishes, when one of the player disconnects or when one player clicks on surrender</li>
+                <li>The player that clicks on surrender ot that disconnects automatically loses</li>
+                <li>At the end of the game, the player with the lower score loses</li>
+            </ol>
             <button id="start-btn">Start Quiz</button>
-            <button id="high-score-page">High Scores</button>
         </div>
 
         <!--QUIZ SCREEN-->
@@ -48,6 +55,7 @@
                 </div>
                 <p>Score: <span id="score">0</span></p>
                 <p>Time left: <span id="count-down"></span></p>
+                <button id="surrender">Surrender</button>
             </div>
             </div>
         </div>
@@ -55,6 +63,7 @@
         <!--RESULT SCREEN-->
         <div id="result-screen" class="hidden">
             <h2>Quiz Complete!</h2>
+            <p>You <span id="result"></span>!!!</p>
             <p>Your Score: <span id="final-score"></span>/<span id="total-score"></span></p>
             <button type="submit"
             id="save-score-btn">Show Game Leaderboard</button>

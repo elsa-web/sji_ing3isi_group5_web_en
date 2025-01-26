@@ -16,6 +16,8 @@ document.getElementById('transitionLink').addEventListener('click', function(eve
     const name = document.getElementById('signup-name').value;
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
+    const win=0;
+    const lose=0;
 
     if (!name || !email || !password) {
         alert('Please fill in all fields!');
@@ -23,7 +25,7 @@ document.getElementById('transitionLink').addEventListener('click', function(eve
     }
 
     // Store user data in localStorage
-    const userinfo = { name, email, password };
+    const userinfo = { name, email, password, win, lose };
     localStorage.setItem(email, JSON.stringify(userinfo));
 
     //For the user to login after signing up
@@ -52,7 +54,7 @@ document.getElementById('transitionLink2').addEventListener('click', () => {
         document.body.classList.add('slide-out'); // Trigger translateY effect
         console.log("azert")
         setTimeout(() => {
-            window.location.assign("../html files/category.html") // Navigate after the animation
+            window.location.assign("./html files/category.html") // Navigate after the animation
           }, 500);
     } else {
         alert('Invalid email or password!');

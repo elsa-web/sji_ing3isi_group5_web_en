@@ -2,6 +2,8 @@ let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
+let win = document.getElementById("win");
+let lose = document.getElementById("lose");
 
 // config param
 let countItem = items.length;
@@ -87,12 +89,16 @@ const currentUser=JSON.parse(localStorage.getItem(currentUsermail));
 console.log("user:"+ currentUser)
 const currentusername = currentUser.name;
 document.getElementById("usrname").textContent=currentusername;
+win.textContent=currentUser.win;
+lose.textContent=currentUser.lose;
 
 const overlay=document.getElementById("overlay");
 const showOverlayButton=document.getElementById("showOverlay");
 const tablesContainer =document.getElementById("tables-container");
 const cate=["geography", "computer", "music", "history", "economy", "football"];
 
+
+//to show leaderboard
 showOverlayButton.addEventListener('click', ()=> {
     tablesContainer.textContent="";
     for(let i=0; i<6; i++){

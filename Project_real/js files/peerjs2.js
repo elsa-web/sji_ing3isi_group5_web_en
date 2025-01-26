@@ -1,6 +1,34 @@
 let peer; // The PeerJS object
 let connection; // The data connection object
 
+//QUIZ VARIABLES
+const category = localStorage.getItem("category");
+const question = "../json files/"+category+".json";
+const startBtn = document.getElementById('start-btn');
+const quizScreen = document.getElementById('quiz-screen');
+const startScreen = document.getElementById('start-screen');
+const resultScreen = document.getElementById('result-screen');
+const questionElem = document.getElementById('question');
+const choicesElem = document.querySelectorAll('.choice');
+const questionCounterElem = document.getElementById('question-counter');
+const totalQuestionsElem = document.getElementById('total-questions');
+const scoreElem = document.getElementById('score');
+const finalScoreElem = document.getElementById('final-score');
+const restartBtn = document.getElementById('restart-btn');
+const saveScoreBtn = document.getElementById('save-score-btn');
+const totalScoreElem = document.getElementById('total-score');
+const userList = document.getElementById("userList");
+const progress_bar = document.getElementById("bar");
+const countdown = document.getElementById("count-down");
+const restartbttn=document.getElementById("restart-btn");
+const opponent_name=document.getElementById("opponent_name");
+const result=document.getElementById("result");
+const surrender=document.getElementById("surrender");
+const currentUsermail=localStorage.getItem("currentUser");
+const currentUser=JSON.parse(localStorage.getItem(currentUsermail));
+const currentOpponent=null;
+const is_winner=true;
+
 // Host setup
 function setupHost() {
     peer = new Peer(); // Initialize the peer object
@@ -62,12 +90,62 @@ function joinGame(hostId) {
     });
 }
 
+function closeConnection(){
+    currentUser.lose+=1;
+    localStorage.setItem(currentUsermail, JSON.stringify(currentUser));
+
+    if(connection && connection.open){
+        connection.send({type: "disconnect"});
+    }else {
+        console.error('No active connection to send score');
+    }
+
+    if(connection){
+        connection.close();
+    }
+    peer.disconnect();
+    peer.destroy();
+
+    myscore=0;
+    opponenent_score=0;
+}
+
+// Send the score to the connected peer
+function sendScore(score) {
+    if (connection && connection.open) {
+        connection.send({ type: 'score', score });
+        console.log('Score sent:', score);
+    } else {
+        console.error('No active connection to send score');
+    }
+}
+
 // Setup connection events (for both host and peer)
 function setupConnectionEvents() {
     // Handle incoming data
     console.log('CONNECTION SUCCESSFUL');
     document.getElementById('connect-screen').classList.add('hidden');
     document.getElementById('game-container').classList.remove('hidden');
+    if (connection && connection.open) {
+        connection.send({ type: 'name', oppoName: currentUser.name });
+    } else {
+        console.error('No active connection to send score');
+    }
+    //receiving data from other player
+    connection.on('data', (data) => {
+        if(data.type==='score'){
+            opponenent_score=data.score;
+            console.log("score received: ", opponenent_score);
+        }
+        else if(data.type==='name'){
+            opponent_name.textContent=data.oppoName;
+            currentOpponent=data.oppoName;
+            console.log("opponent name received: ", data.oppoName);
+        }
+        else if(data.type==='disconnect'){
+            closeConnection();
+        }
+    });
 }
 
 // Send a question to the connected peer
@@ -80,15 +158,7 @@ function setupConnectionEvents() {
     }
 }*/
 
-// Send the score to the connected peer
-/*function sendScore(score) {
-    if (connection && connection.open) {
-        connection.send({ type: 'score', score });
-        console.log('Score sent:', score);
-    } else {
-        console.error('No active connection to send score');
-    }
-}*/
+
 
 // Event listeners for hosting and joining
 document.getElementById('host-btn').addEventListener('click', setupHost);
@@ -105,26 +175,6 @@ document.getElementById('join-btn').addEventListener('click', function () {
 
 ////////////QUIZZZZZ///////////////////////////////////////////////////////////////////////////////////////////
 
-
-const category = localStorage.getItem("category");
-const question = "../json files/"+category+".json";
-const startBtn = document.getElementById('start-btn');
-const quizScreen = document.getElementById('quiz-screen');
-const startScreen = document.getElementById('start-screen');
-const resultScreen = document.getElementById('result-screen');
-const questionElem = document.getElementById('question');
-const choicesElem = document.querySelectorAll('.choice');
-const questionCounterElem = document.getElementById('question-counter');
-const totalQuestionsElem = document.getElementById('total-questions');
-const scoreElem = document.getElementById('score');
-const finalScoreElem = document.getElementById('final-score');
-const restartBtn = document.getElementById('restart-btn');
-const saveScoreBtn = document.getElementById('save-score-btn');
-const totalScoreElem = document.getElementById('total-score');
-const userList = document.getElementById("userList");
-const progress_bar = document.getElementById("bar");
-const countdown = document.getElementById("count-down");
-const highscore=document.getElementById("high-score-page");
 let startcount=45;
 console.log(question);
 
@@ -134,7 +184,8 @@ let questions = [];
 
 let currentQuestionIndex = 0;
 let maxQuestions = 4;
-let score = 0;
+let myscore = 0;
+let opponenent_score=0;
 let counter = 0;
 let acceptingAnswers ;//FOR THE USER TO BE ABLETO CHOOSE ONLY ONE QUESTION
 
@@ -190,7 +241,7 @@ function startGame() {
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
     totalQuestionsElem.textContent = questions.length;
-    score = 0;
+    myscore = 0;
     /**To copy the elements of question  */
     availableQuestions = [];
     for (let i = 0; i < questions.length; i++) {
@@ -201,7 +252,10 @@ function startGame() {
         countdown.textContent=startcount+"s";
         startcount--;
         if(startcount<0){
-            localStorage.setItem("mostRecentScore", score);
+            localStorage.setItem("mostRecentScore", myscore);
+            if(opponenent_score>myscore){
+                is_winner=false;
+            }
             endGame();
             console.log("startcount after fxn call: "+startcount)
         }
@@ -227,7 +281,7 @@ function loadQuestion() {
     questionCounterElem.textContent = counter + 1;
     progress_bar.style.width=((counter+1)/questions.length)*100+"%";
     console.log(progress_bar.style.width);
-    scoreElem.textContent = score;
+    scoreElem.textContent = myscore;
 
     choicesElem.forEach(choice => {
         //IMPORTANT to remove od listeners efore putting new one bic on clicking multiple reponses
@@ -266,7 +320,8 @@ function handleChoiceClick(event) {
     console.log(availableQuestions[currentQuestionIndex].answer);
     // Check if the selected answer is correct
     if (selectedAnswer === availableQuestions[currentQuestionIndex].answer) {
-        score += 10; // Add points for correct answer// Add 'correct' class
+        myscore += 10; // Add points for correct answer// Add 'correct' class
+        sendScore(myscore); //sending score to other player
         console.log(selectedChoice);
         selectedChoice.classList.add('correct');
     } else { // Add 'incorrect' class
@@ -287,7 +342,10 @@ function handleChoiceClick(event) {
         if (availableQuestions.length > 0) {
             loadQuestion();
         } else {
-            localStorage.setItem("mostRecentScore", score);
+            localStorage.setItem("mostRecentScore", myscore);
+            if(opponenent_score>myscore){
+                is_winner=false;
+            }
             endGame();
         }
     }, 1000); // Delay of 1 second for feedback
@@ -298,8 +356,18 @@ function endGame() {
     quizScreen.classList.add('hidden');
     /**.classList enables us to manage(add, remove, toggle classes) the CSS */
     resultScreen.classList.remove('hidden');
+
+    if(is_winner){
+        result.textContent="win";
+        currentUser.win+=1;
+    }
+    else{
+        result.textContent="lose";
+        currentUser.lose+=1;
+    }
+    localStorage.setItem(currentUsermail, JSON.stringify(currentUser));
     //To display score/totalscore
-    finalScoreElem.textContent = score;
+    finalScoreElem.textContent = myscore;
     totalScoreElem.textContent = questions.length * 10;
 }
 
@@ -308,6 +376,12 @@ function restartGame() {
     resultScreen.classList.add('hidden');
     startScreen.classList.remove('hidden');
 }
+
+restartBtn.addEventListener('click', ()=>{
+    window.location.reload();
+})
+
+surrender.addEventListener("click", closeConnection);
 
 // Async Initialization
 async function initializeQuiz() {
@@ -368,15 +442,20 @@ function displayUserData() {
     });
 }
 
-saveScoreBtn&&highscore.addEventListener('click', (e) => {
+saveScoreBtn.addEventListener('click', (e) => {
 e.preventDefault(); // Prevent form submission from refreshing the page
 
 //getting username and assigning a score automatically
-const currentUsermail=localStorage.getItem("currentUser");
-console.log("mail:"+ currentUsermail)
-const currentUser=JSON.parse(localStorage.getItem(currentUsermail));
-console.log("user:"+ currentUser)
-const currentusername = currentUser.name;
+const currentusername = "";
+const score=0
+if(is_winner){
+    currentusername=currentUser.name;
+    score=myscore;
+}
+else{
+    currentusername=currentOpponent;
+    score=opponenent_score;
+}
 
 console.log(currentusername);
 console.log(score);
