@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-trophy"></i>
+                    <span>Score History</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Description</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Game</span>
+                <h2>Quiz Categories</h2>
+            </div>
+            <div class="user--info">
+                <p id="usr_name">User Name</p>
+                <img src="#" alt="User Image">
+            </div>
+        </div>
+
+        <div class="description-content">
+            <h2 style="color: #87009c; margin-bottom: 1rem;">Welcome to The Ultimate Quiz Challenge!</h2>
+            <p style="line-height: 1.6; margin-bottom: 2rem;">
+                Challenge yourself and compete with players worldwide in our dynamic quiz game! Test your knowledge across various categories, earn points, and climb the global leaderboard. Each category offers different difficulty levels and unique challenges to keep you engaged and learning.
+            </p>
+
+            <!-- ADD LOGIN REDIRECTION HERE -->
+            <div class="redirect-section">
+                <button onclick="window.location.href='login.html'" class="redirect-btn">
+                    <i class="fas fa-sign-in-alt"></i> Go to Login
+                </button>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-landmark category-icon"></i>
+                    <h3 class="category-title">History</h3>
+                    <p class="category-description">Journey through time with questions about ancient civilizations, world wars, and revolutionary moments that shaped our world.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-globe-americas category-icon"></i>
+                    <h3 class="category-title">Geography</h3>
+                    <p class="category-description">Explore countries, capitals, landmarks, and natural wonders from around the globe.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-laptop-code category-icon"></i>
+                    <h3 class="category-title">Computer</h3>
+                    <p class="category-description">Test your knowledge of programming, hardware, software, and the latest tech trends.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-futbol category-icon"></i>
+                    <h3 class="category-title">Football</h3>
+                    <p class="category-description">Challenge yourself with questions about teams, players, historic matches, and football traditions.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-music category-icon"></i>
+                    <h3 class="category-title">Music</h3>
+                    <p class="category-description">From classical to contemporary, test your knowledge of artists, genres, and musical history.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-chart-line category-icon"></i>
+                    <h3 class="category-title">Economics</h3>
+                    <p class="category-description">Dive into questions about market theories, financial concepts, and global economic events.</p>
+                </div>
+
+                <div class="category-card">
+                    <i class="fas fa-theater-masks category-icon"></i>
+                    <h3 class="category-title">Culture</h3>
+                    <p class="category-description">Explore traditions, customs, arts, and cultural practices from around the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .redirect-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .redirect-btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, #87009c, #6a0079);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .redirect-btn:hover {
+            background: linear-gradient(135deg, #6a0079, #87009c);
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</body>
+</html>

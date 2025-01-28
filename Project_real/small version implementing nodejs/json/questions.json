@@ -1,0 +1,203 @@
+[
+    {
+        "question": "Which music genre is most associated with Cameroon?",
+        "choice1": "Jazz",
+        "choice2": "Afrobeats",
+        "choice3": "Salsa",
+        "choice4": "Makossa",
+        "answer": 4
+    },
+    {
+        "question": "Who is known as the king of Makossa?",
+        "choice1": "Richard Bona",
+        "choice2": "Francis Bebey",
+        "choice3": "Petit Pays",
+        "choice4": "Manu Dibango",
+        "answer": 3
+    },
+    {
+        "question": "Which Cameroonian musician composed the global hit 'Soul Makossa'?",
+        "choice1": "Manu Dibango",
+        "choice2": "Salif Keita",
+        "choice3": "Wes Madiko",
+        "choice4": "Yannick Noah",
+        "answer": 1
+    },
+    {
+        "question": "What instrument is Manu Dibango famously associated with?",
+        "choice1": "Piano",
+        "choice2": "Saxophone",
+        "choice3": "Guitar",
+        "choice4": "Drums",
+        "answer": 2
+    },
+    {
+        "question": "Which Cameroonian artist is known for blending jazz and traditional music?",
+        "choice1": "Francis Bebey",
+        "choice2": "Petit Pays",
+        "choice3": "Manu Dibango",
+        "choice4": "Richard Bona",
+        "answer": 4
+    },
+    {
+        "question": "What style of music is Bikutsi?",
+        "choice1": "Rock",
+        "choice2": "Hip-hop",
+        "choice3": "Traditional dance music",
+        "choice4": "Jazz",
+        "answer": 3
+    },
+    {
+        "question": "Which Cameroonian artist is nicknamed 'Turbo d'Afrique'?",
+        "choice1": "Petit Pays",
+        "choice2": "Manu Dibango",
+        "choice3": "Richard Bona",
+        "choice4": "Anne-Marie Nzié",
+        "answer": 1
+    },
+    {
+        "question": "Which traditional Cameroonian instrument is commonly used in music?",
+        "choice1": "Maracas",
+        "choice2": "Harmonica",
+        "choice3": "Violin",
+        "choice4": "Balafon",
+        "answer": 4
+    },
+    {
+        "question": "Who is considered the mother of modern Cameroonian music?",
+        "choice1": "Anne-Marie Nzié",
+        "choice2": "Angélique Kidjo",
+        "choice3": "Brenda Fassie",
+        "choice4": "Charlotte Dipanda",
+        "answer": 1
+    },
+    {
+        "question": "Which Cameroonian artist sang the hit 'Alane'?",
+        "choice1": "Wes Madiko",
+        "choice2": "Petit Pays",
+        "choice3": "Yannick Noah",
+        "choice4": "Manu Dibango",
+        "answer": 1
+    },
+    {
+        "question": "What is the cultural significance of Makossa music in Cameroon?",
+        "choice1": "It is only used in religious ceremonies.",
+        "choice2": "It represents urban culture.",
+        "choice3": "It is popular in rural areas.",
+        "choice4": "It is exclusive to one ethnic group.",
+        "answer": 2
+    },
+    {
+        "question": "Which Cameroonian city is considered a hub for music production?",
+        "choice1": "Bamenda",
+        "choice2": "Buea",
+        "choice3": "Douala",
+        "choice4": "Yaoundé",
+        "answer": 3
+    },
+    {
+        "question": "What is the meaning of 'Bikutsi' in the Ewondo language?",
+        "choice1": "Storytelling",
+        "choice2": "Let’s dance",
+        "choice3": "War chant",
+        "choice4": "Love song",
+        "answer": 2
+    },
+    {
+        "question": "Which Cameroonian artist won a Grammy Award?",
+        "choice1": "Wes Madiko",
+        "choice2": "Richard Bona",
+        "choice3": "Petit Pays",
+        "choice4": "Manu Dibango",
+        "answer": 2
+    },
+    {
+        "question": "What genre of music is Charlotte Dipanda known for?",
+        "choice1": "Afro-pop",
+        "choice2": "Jazz",
+        "choice3": "Makossa",
+        "choice4": "Bikutsi",
+        "answer": 1
+    },
+    {
+        "question": "Which Cameroonian song became a global anthem in the 2000s?",
+        "choice1": "Sweet Mother",
+        "choice2": "Soul Makossa",
+        "choice3": "Waka Waka",
+        "choice4": "Alane",
+        "answer": 4
+    },
+    {
+        "question": "Who is a prominent Cameroonian Afrobeat artist?",
+        "choice1": "Mr. Leo",
+        "choice2": "Fela Kuti",
+        "choice3": "Davido",
+        "choice4": "Yemi Alade",
+        "answer": 1
+    },
+    {
+        "question": "What is the key characteristic of Bikutsi music?",
+        "choice1": "Improvised solos",
+        "choice2": "Focus on percussion",
+        "choice3": "Slow ballads",
+        "choice4": "Fast-paced rhythms",
+        "answer": 4
+    },
+    {
+        "question": "Which artist is known for popularizing Cameroonian music globally?",
+        "choice1": "Petit Pays",
+        "choice2": "Manu Dibango",
+        "choice3": "Richard Bona",
+        "choice4": "Francis Bebey",
+        "answer": 2
+    },
+    {
+        "question": "What theme is commonly found in Cameroonian music?",
+        "choice1": "Nature and landscapes",
+        "choice2": "Abstract concepts",
+        "choice3": "Social commentary",
+        "choice4": "Pure entertainment",
+        "answer": 3
+    },
+    {
+        "question": "Which Cameroonian music group gained fame in the 1990s?",
+        "choice1": "Mafikizolo",
+        "choice2": "Les Têtes Brûlées",
+        "choice3": "Magic System",
+        "choice4": "P-Square",
+        "answer": 2
+    },
+    {
+        "question": "Who is known for fusing traditional and electronic sounds in Cameroon?",
+        "choice1": "Wes Madiko",
+        "choice2": "Richard Bona",
+        "choice3": "Francis Bebey",
+        "choice4": "Manu Dibango",
+        "answer": 3
+    },
+    {
+        "question": "Which Cameroonian artist composed music for films?",
+        "choice1": "Francis Bebey",
+        "choice2": "Wes Madiko",
+        "choice3": "Manu Dibango",
+        "choice4": "Richard Bona",
+        "answer": 3
+    },
+    {
+        "question": "What is the traditional dance performed to Bikutsi music?",
+        "choice1": "Foot tapping",
+        "choice2": "Shoulder dance",
+        "choice3": "Hip swaying",
+        "choice4": "Makossa moves",
+        "answer": 2
+    },
+    {
+        "question": "What festival celebrates Cameroonian music and culture?",
+        "choice1": "Cameroon Jazz Festival",
+        "choice2": "Fête de la Musique",
+        "choice3": "Ecrans Noirs",
+        "choice4": "Ngondo Festival",
+        "answer": 4
+    }
+]
+

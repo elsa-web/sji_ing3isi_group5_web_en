@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /*Transforms all the children elts of body into flex items*/
+    /*By default the items are laid out in a row*/
+    display: flex;
+    background: rgb(224, 224, 224);
+    box-sizing: border-box; /* Ensures padding/margin don’t affect width */
+    overflow-x: hidden;
+}
+.sidebar{
+    /*Sticky is a mix btw relative and fixed
+    It is relative until it reaches top:0;*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: aliceblue;
+    overflow: hidden;
+    transition:  all 0.5s linear;
+    background: linear-gradient(135deg, #4a0055, #7e0091, #9400b3);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+    height: 100px;
+    margin-bottom: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Set gap between list items */
+}
+.menu li{
+    overflow: hidden;
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.3s linear;    
+}
+.menu li:hover, .active{
+    background: linear-gradient(135deg, #662d91, #8e44ad, #b74dc9);
+}
+.menu a{
+    color: aliceblue;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a i{
+    font-size: 1.2rem;
+    transition: transform 0.8s ease;
+}
+.menu a:hover {
+    i{
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+.logout{
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+}
+.main--content{
+    position: relative;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 1rem;
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header--wrapper{
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px #2b0032;
+    transition: all 0.5s ease-in-out;
+}
+.header--wrapper:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+.header--title{
+    color: #87009c;
+}
+.user--info{
+    position: relative;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/****************Card container********************/
+/* Main container styling with enhanced visual appeal */
+.tab-container {
+    position: relative;
+    left: 10%;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #2b0032;  /* Deep purple shadow for depth */
+    margin-bottom: 2rem;
+    width: 70%;
+    transition: all 0.7s ease-in-out;
+    perspective: 1000px; /* This creates the 3D space for child elements */
+}
+
+/* Container hover effect for interactive feedback */
+.tab-container:hover {
+    transform: scale(1.05);
+    transition: all 0.7s ease-in-out;
+}
+
+/* Flex container for tabs with improved spacing */
+.tab--wrapper {
+    display: flex;
+    flex-wrap: wrap;  /* Allows tabs to wrap on smaller screens */
+    gap: 1rem;  /* Consistent spacing between tabs */
+}
+
+
+/* Enhanced tab styling for 3D rotation */
+.tab {
+    position: relative;
+    width: 290px;
+    height: 150px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  /* This maintains 3D space for child elements */
+    cursor: pointer;
+    color: white;
+}
+
+/* Creating the 3D flip effect on hover */
+.tab:hover {
+    transform: rotateY(180deg);
+}
+
+/* We need to modify the content containers to handle the flip */
+.tab--front, .tab--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    backface-visibility: hidden;  /* This is the key property that hides the reverse side */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 
+    0 4px 6px rgba(74, 0, 85, 0.1),
+    0 8px 12px rgba(74, 0, 85, 0.1),
+    0 12px 18px rgba(74, 0, 85, 0.1);
+}
+
+.tab--front {
+    transform: rotateY(0deg); 
+    background: inherit;
+}
+
+.tab--back {
+    background: inherit;
+    transform: rotateY(180deg);
+}
+
+.tab:hover .tab--front,
+.tab:hover .tab--back {
+    animation: gradientShift 3s ease infinite;
+}
+
+/* Adding space for icons */
+.tab--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Amount section styling */
+.amount {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  /* Consistent spacing between title and value */
+}
+
+/* Title text styling */
+.title {
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;  /* Makes titles stand out */
+    letter-spacing: 0.5px;  /* Improves readability */
+}
+
+/* Value text styling */
+.amount--value {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Card detail styling */
+.card-detail {
+    font-size: 14px;
+    opacity: 0.9;  /* Slightly subtle but still readable */
+}
+
+.tab--header, .card-detail {
+    /* This ensures the text remains readable during rotation */
+    backface-visibility: visible;
+}
+.title, .amount--value, .card-detail {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Color variations for each tab with preserved rotation */
+.tab:nth-child(1) .tab--front,
+.tab:nth-child(1) .tab--back {
+    background: linear-gradient(135deg, #4a0055, #7e0091, #9400b3);
+}
+
+.tab:nth-child(2) .tab--front,
+.tab:nth-child(2) .tab--back {
+    background: linear-gradient(135deg, #662d91, #8e44ad, #b74dc9);
+}
+
+#play-tab .tab--front,
+#play-tab .tab--back {
+    background: linear-gradient(135deg, #6a0dad, #9932cc, #ff1493);
+}
+
+/* Let's add a subtle animation to make the gradients shift on hover */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Making the floating icon animation work with rotation */
+@keyframes float {
+    0% {
+        transform: translateY(0px) ;
+    }
+    50% {
+        transform: translateY(-10px) ;
+    }
+    100% {
+        transform: translateY(0px) ;
+    }
+}
+
+.tab--icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+/************   TABULAR SECTION     ***********/
+.tabular--wrapper{
+    background: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px #2b0032;
+    transition: all 0.7s ease-in-out;
+}
+.tabular--wrapper:hover{
+    transform: scale(1.05);
+    transition: all 0.7s ease-in-out;
+}
+.table-container{
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #8f00a5;
+    color: white;
+}
+th{
+    padding: 15px;
+    text-align: left;
+}
+tbody{
+    background: white;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+}
+tr:nth-child(even){
+    background: #9900b0;
+    color: white;
+}
+tfoot{
+    background: rgba(113, 99, 186, 255);
+    color: white;
+    font-weight: bold;
+}
+tfoot td{
+    padding: 15px;
+}

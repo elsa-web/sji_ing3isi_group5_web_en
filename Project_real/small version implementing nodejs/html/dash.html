@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/dash.css">
+</head>
+<body>
+    <div class="sidebar" >
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-trophy"></i>
+                    <span>Score History</span>
+                </a>
+            </li>
+            <li >
+                <a href="#">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Description</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+                <div class="user--info">
+                    <p id="usr_name">User Name</p>
+                    <img src="#" alt="User Image">
+                </div>
+            </div>
+        </div>
+        <div class="tab-container">
+            <div class="tab--wrapper">
+                <div class="tab">
+                    <div class="tab--front">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">LAST GAME</span>
+                                <span class="amount--value">SCORE</span>
+                            </div>
+                            <!-- Trophy icon with animation -->
+                            <i class="fas fa-trophy tab--icon"></i>
+                        </div>
+                        <span class="card-detail">Category: Level</span>
+                    </div>
+                    <div class="tab--back">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">GAME HISTORY</span>
+                                <span class="amount--value">Previous Session</span>
+                            </div>
+                            <i class="fas fa-history tab--icon"></i>
+                        </div>
+                        <span class="card-detail">Review your performance</span>
+                    </div>
+                </div>
+                
+                <!-- Highest Score Tab -->
+                <div class="tab">
+                    <div class="tab--front">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">HIGHEST SCORE</span>
+                                <span class="amount--value">SCORE</span>
+                            </div>
+                            <!-- Star icon with animation -->
+                            <i class="fas fa-star tab--icon"></i>
+                        </div>
+                        <span class="card-detail">Category: Level</span>
+                    </div>
+                    <div class="tab--back">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">ACHIEVEMENTS</span>
+                                <span class="amount--value">Personal Best</span>
+                            </div>
+                            <i class="fas fa-trophy tab--icon"></i>
+                        </div>
+                        <span class="card-detail">Keep pushing your limits!</span>
+                    </div>
+                </div>
+
+                <!-- Play Tab -->
+                <div class="tab" id="play-tab">
+                    <div class="tab--front">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">READY</span>
+                                <span class="amount--value">PLAY!!!</span>
+                            </div>
+                            <!-- Gamepad icon with animation -->
+                            <i class="fas fa-gamepad tab--icon"></i>
+                        </div>
+                        <span class="card-detail">LEVEL</span>
+                    </div>
+                    <div class="tab--back">
+                        <div class="tab--header">
+                            <div class="amount">
+                                <span class="title">LET'S GO</span>
+                                <span class="amount--value">Start Game</span>
+                            </div>
+                            <i class="fas fa-play-circle tab--icon"></i>
+                        </div>
+                        <span class="card-detail">Click to begin your adventure!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------TABLE-------------------------------->
+        <div class="tabular--wrapper">
+            <h3 class="mian--title">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Category</th>
+                                <th>Score</th>
+                                <th>Opponent</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>12/12/2021</td>
+                                    <td>Football</td>
+                                    <td>2-1</td>
+                                    <td>Chelsea</td>
+                                </tr>
+                                <tr>
+                                    <td>12/12/2021</td>
+                                    <td>Football</td>
+                                    <td>2-1</td>
+                                    <td>Chelsea</td>
+                                </tr>
+                                <tr>
+                                    <td>12/12/2021</td>
+                                    <td>Football</td>
+                                    <td>2-1</td>
+                                    <td>Chelsea</td>
+                                </tr>
+                                <tr>
+                                    <td>12/12/2021</td>
+                                    <td>Football</td>
+                                    <td>2-1</td>
+                                    <td>Chelsea</td>
+                                </tr>
+                                <tr>
+                                    <td>12/12/2021</td>
+                                    <td>Football</td>
+                                    <td>2-1</td>
+                                    <td>Chelsea</td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </h3>
+        </div>
+
+    </div>
+
+    <script src="../js/dash.js"></script>
+</body>
+</html>
